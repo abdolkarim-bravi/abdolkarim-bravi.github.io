@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>عبدالکریم براویی | Abdolkarim Brawi</title>
+  <meta name="description" content="سایت شخصی عبدالکریم براویی؛ نوجوان برنامه‌نویس علاقه‌مند به LLM و هوش مصنوعی. پروژه‌ها، مهارت‌ها، و راه‌های ارتباطی." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23006cff'/%3E%3Ctext x='50' y='62' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif'%3EK%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{--bg:#0b1020;--card:#111831;--fg:#e8ecff;--muted:#a9b3d0;--primary:#6aa7ff;--accent:#86efac;--ring:#2b3a67;}
+    :root.light{--bg:#f6f8ff;--card:#ffffff;--fg:#0c1222;--muted:#4b576b;--primary:#1f66ff;--accent:#16a34a;--ring:#dfe6ff;}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family:IRANSans, Vazirmatn, Segoe UI, Roboto, Helvetica, Arial, sans-serif;line-height:1.6}
+    *,*::before,*::after{box-sizing:border-box}
+    .container{max-width:1100px;margin-inline:auto;padding:24px}
+    header{position:sticky;top:0;background:color-mix(in oklab, var(--bg) 92%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--ring);z-index:10}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--primary),#00d4ff);display:grid;place-items:center;font-weight:800;color:#fff}
+    .navlinks a{color:var(--fg);text-decoration:none;padding:8px 12px;border-radius:10px}
+    .navlinks a:hover{background:var(--ring)}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--primary);color:white;text-decoration:none;padding:10px 16px;border-radius:12px;border:1px solid color-mix(in oklab, var(--primary) 75%, black);box-shadow:0 8px 20px color-mix(in oklab, var(--primary) 25%, transparent);}
+    .btn:hover{transform:translateY(-1px)}
+    .hero{display:grid;grid-template-columns:1.2fr 0.8fr;gap:28px;align-items:center;padding:56px 0}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:20px;padding:22px}
+    h1{font-size:clamp(28px,5vw,40px);margin:0 0 8px}
+    h2{font-size:clamp(22px,4vw,28px);margin:0 0 12px}
+    p{margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:transparent;border:1px dashed var(--ring);padding:6px 10px;border-radius:999px}
+    .grid{display:grid;gap:18px}
+    .grid.projects{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    footer{padding:32px 0;color:var(--muted);text-align:center}
+    .avatar{width:100%;aspect-ratio:1;border-radius:18px;object-fit:cover;border:2px solid var(--ring)}
+    .section{padding:30px 0}
+    .kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .kpi{background:var(--card);border:1px solid var(--ring);border-radius:16px;padding:14px;text-align:center}
+    .kpi b{font-size:24px;display:block}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.navlinks{display:none}}
+    .lang{display:inline-flex;gap:8px;align-items:center}
+    .divider{height:1px;background:var(--ring);margin:22px 0}
+    .sr{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}
+    a.inline{color:var(--primary)}
+    .note{font-size:14px;color:var(--muted)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:10px;border:1px solid var(--ring);font-size:13px}
+  </style>
+  <script>
+    // Respect user preference for color scheme
+    try{ if(window.matchMedia('(prefers-color-scheme: light)').matches){document.documentElement.classList.add('light')} }catch(e){}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Abdolkarim Brawi",
+    "alternateName":"عبدالکریم براویی",
+    "url":"https://abdolkarim-bravi.github.io",
+    "email":"mailto:baravi.karim@gmail.com",
+    "knowsAbout":["Artificial Intelligence","Large Language Models","Python","Machine Learning"],
+    "sameAs":[
+      "https://github.com/abdolkarim-bravi"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo" aria-hidden="true">K</div>
+          <div>
+            <strong>عبدالکریم براویی</strong>
+            <div class="muted" style="font-size:13px">Teen Programmer • LLM & AI</div>
+          </div>
+        </div>
+        <div class="navlinks">
+          <a href="#about">درباره</a>
+          <a href="#skills">مهارت‌ها</a>
+          <a href="#projects">پروژه‌ها</a>
+          <a href="#contact">ارتباط</a>
+        </div>
+        <a class="btn" href="https://github.com/abdolkarim-bravi" rel="me">گیت‌هاب من</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>سلام! من <span class="lang"><span>عبدالکریم براویی</span><span class="badge">Abdolkarim Brawi</span></span> هستم</h1>
+        <p class="muted">نوجوان برنامه‌نویس و علاقه‌مند به <b>هوش مصنوعی</b> و <b>مدل‌های زبانی بزرگ (LLMs)</b>. این‌جا مسیر یادگیری، پروژه‌ها و دستاوردهایم را منتشر می‌کنم.</p>
+        <div class="chips" aria-label="skills">
+          <span class="chip">Python</span>
+          <span class="chip">Transformers</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Jupyter</span>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="https://github.com/abdolkarim-bravi/llm-course-2025">دوره LLM</a>
+          <a class="btn" href="https://github.com/abdolkarim-bravi/portfolio-llm">نمونه‌کار</a>
+          <a class="btn" href="#contact">ارتباط</a>
+        </div>
+      </div>
+      <div>
+        <img class="avatar" alt="عکس پروفایل یا نمایهٔ انتزاعی" src="https://avatars.githubusercontent.com/u/0?v=4" onerror="this.src='data:image/svg+xml;utf8,\
+        %3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 200\'%3E%3Cdefs%3E%3ClinearGradient id=\'g\' x1=\'0\' y1=\'0\' x2=\'1\' y2=\'1\'%3E%3Cstop stop-color=\'%236aa7ff\'/%3E%3Cstop stop-color=\'%2300d4ff\' offset=\'1\'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=\'200\' height=\'200\' rx=\'28\' fill=\'url(%23g)\'/%3E%3Ctext x=\'100\' y=\'118\' text-anchor=\'middle\' font-family=\'sans-serif\' font-size=\'88\' fill=\'white\'%3EK%3C/text%3E%3C/svg%3E'" />
+        <p class="note">می‌توانید بعداً این تصویر را با عکس گیت‌هاب خودتان جایگزین کنید.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>درباره من</h2>
+      <div class="divider"></div>
+      <p>من عبدالکریم براویی هستم؛ در حال یادگیری <b>هوش مصنوعی</b>، <b>یادگیری ماشین</b> و <b>پایتون</b>. هدفم ساخت ابزارها و پروژه‌هایی است که به دیگران کمک کند و مسیر پیشرفت خودم را مستند کنم.</p>
+      <div class="kpis">
+        <div class="kpi"><b>LLM</b><span class="muted">پژوهش و تمرین روزانه</span></div>
+        <div class="kpi"><b>Git</b><span class="muted">عادت کامیت‌های کوچک</span></div>
+        <div class="kpi"><b>Open</b><span class="muted">اشتراک دانش و کد</span></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>مهارت‌ها</h2>
+      <div class="divider"></div>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">PyTorch</span>
+        <span class="chip">Transformers</span>
+        <span class="chip">Jupyter</span>
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">Colab</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>پروژه‌ها</h2>
+      <div class="divider"></div>
+      <div class="grid projects">
+        <article class="card">
+          <h3>دوره LLM</h3>
+          <p class="muted">نوت‌بوک‌ها و تمرین‌های من در مسیر یادگیری مدل‌های زبانی بزرگ.</p>
+          <a class="btn" href="https://github.com/abdolkarim-bravi/llm-course-2025" aria-label="مشاهده ریپوی دوره LLM">مشاهده ریپو</a>
+        </article>
+        <article class="card">
+          <h3>نمونه‌کار LLM</h3>
+          <p class="muted">خروجی‌های منتخب و قابل‌نمایش به‌عنوان پورتفولیو.</p>
+          <a class="btn" href="https://github.com/abdolkarim-bravi/portfolio-llm" aria-label="مشاهده ریپوی پورتفولیو">مشاهده ریپو</a>
+        </article>
+        <article class="card">
+          <h3>وب‌سایت شخصی</h3>
+          <p class="muted">این سایت روی GitHub Pages میزبانی می‌شود و به مرور به‌روزرسانی خواهد شد.</p>
+          <a class="btn" href="#" aria-disabled="true">فعلاً همین‌جا هستید</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>ارتباط</h2>
+      <div class="divider"></div>
+      <p class="muted">برای جلوگیری از اسپم، ایمیل به‌صورت رمزگذاری‌شده نمایش داده می‌شود. با کلیک روی دکمه، ایمیل باز می‌شود.</p>
+      <a id="emailBtn" class="btn" href="#">ارسال ایمیل</a>
+      <p class="note" aria-live="polite" id="emailNote"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="y"></span> Abdolkarim Brawi • ساخته‌شده با GitHub Pages</div>
+    </div>
+  </footer>
+
+  <button id="top" class="btn" style="position:fixed;left:18px;bottom:18px;opacity:.92">بازگشت به بالا ↑</button>
+
+  <script>
+    // Back to top
+    document.getElementById('top').onclick = () => window.scrollTo({top:0,behavior:'smooth'});
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Obfuscated email reveal + mailto
+    (function(){
+      const p1 = 'baravi.kar';
+      const p2 = 'im';
+      const p3 = '@';
+      const p4 = 'gmail';
+      const p5 = '.com';
+      const email = p1 + p2 + p3 + p4 + p5; // baravi.karim@gmail.com
+      const btn = document.getElementById('emailBtn');
+      const note = document.getElementById('emailNote');
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        btn.setAttribute('href','mailto:'+email);
+        note.textContent = 'ایمیل باز شد: ' + email;
+        // optional: actually navigate now
+        window.location.href = 'mailto:'+email;
+      });
+    })();
+  </script>
+</body>
+</html>
